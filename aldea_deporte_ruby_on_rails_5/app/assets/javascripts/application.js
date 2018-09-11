@@ -11,5 +11,14 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require core/jquery.min
+//= require core/popper.min
+//= require core/bootstrap.min
+//= require plugins/bootstrap-switch
+//= require plugins/nouislider.min
+//= require plugins/bootstrap-datepicker
+//= require plugins/jquery.easing.min
+//= require now-ui-kit
+//= require app
 //= require turbolinks
 //= require_tree .

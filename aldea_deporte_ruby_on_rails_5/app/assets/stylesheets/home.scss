@@ -1,3 +1,15 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.page-header-image{
+    background-image: url('/assets/barner-sm.jpg');
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 991px){
+    .sidebar-collapse .navbar .dropdown.show .dropdown-menu, .sidebar-collapse .navbar .dropdown .dropdown-menu{
+        height: auto;
+        overflow-y: hidden;
+    }
+}

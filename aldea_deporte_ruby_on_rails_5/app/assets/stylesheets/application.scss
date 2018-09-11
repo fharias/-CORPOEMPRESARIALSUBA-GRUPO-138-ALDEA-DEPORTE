@@ -10,6 +10,27 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require bootstrap/bootstrap.min
+ *= require now-ui-kit/now-ui-kit
+ *= require_tree
+ *= require_self.
  */
+ .scrollbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: #f96332;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+  }
+  
+  .scrollbtn:hover {
+    background-color: #555;
+  }
