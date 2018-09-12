@@ -1,7 +1,7 @@
-#Nombre Aplicacion "Aldea Deporte"
+# Nombre Aplicacion "Aldea Deporte"
 
-#Localidad Los Martires
-#Reto Eventos Deportivos
+# Localidad Los Martires
+# Reto Eventos Deportivos
 
 Aqui se encontrara almacenada la información correspondiente a la documentación de la aplicación.
 
