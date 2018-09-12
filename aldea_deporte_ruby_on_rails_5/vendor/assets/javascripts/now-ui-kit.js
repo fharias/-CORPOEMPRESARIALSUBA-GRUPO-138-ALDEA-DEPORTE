@@ -109,8 +109,9 @@ $(document).ready(function() {
 // Javascript just for Demo purpose, remove it from your project
 nowuiKitDemo = {
   checkScrollForParallax: debounce(function() {
+    
     var current_scroll = $(this).scrollTop();
-
+    
     oVal = ($(window).scrollTop() / 3);
     big_image.css({
       'transform': 'translate3d(0,' + oVal + 'px,0)',
@@ -184,11 +185,13 @@ nowuiKit = {
     if ($(document).scrollTop() > scroll_distance) {
       if (transparent) {
         transparent = false;
+        document.getElementById("scroll").style.display = "block";
         $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
       }
     } else {
       if (!transparent) {
         transparent = true;
+        document.getElementById("scroll").style.display = "none";
         $('.navbar[color-on-scroll]').addClass('navbar-transparent');
       }
     }

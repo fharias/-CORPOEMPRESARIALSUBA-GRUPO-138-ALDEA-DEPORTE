@@ -6,6 +6,14 @@
     background-repeat: no-repeat;
 }
 
+.carousel-caption {
+    background-color: #f96332 !important;
+}
+
+.barner-title{
+    vertical-align: middle;
+    text-shadow: #f96332 10px 10px 10px;
+}
 
 @media screen and (max-width: 991px){
     .sidebar-collapse .navbar .dropdown.show .dropdown-menu, .sidebar-collapse .navbar .dropdown .dropdown-menu{
