@@ -4,22 +4,22 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
 
-      t.string :user_name,               null: false, default: ""
-      t.string :first_name,              null: false, default: ""
-      t.string :last_name,               null: false, default: ""
+      t.string :user_name,               null: false, default: "", limit: 20
+      t.string :first_name,              null: false, default: "", limit: 50
+      t.string :last_name,               null: false, default: "", limit: 50
       t.date   :birthday,                null: false, default: ""
-      t.string :phone
-      t.string :document_type
-      t.string :document
-      t.string :document_file
-      t.string :photo
+      t.string :phone,                   limit: 50
+      t.string :document_type,           limit: 30
+      t.string :document,                limit: 20
+      t.string :document_file,           limit: 50
+      t.string :photo,                   limit: 50
 
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
-      t.string :encrypted_password, null: false, default: ""
+      t.string :email,              null: false, default: "",limit: 50
+      t.string :encrypted_password, null: false, default: "",limit: 100
 
       ## Recoverable
-      t.string   :reset_password_token
+      t.string   :reset_password_token, limit: 100
       t.datetime :reset_password_sent_at
 
       ## Rememberable

@@ -6,7 +6,7 @@ class CreateHeadquarters < ActiveRecord::Migration[5.1]
       t.string :address,                 null: false, default: "", limit: 255
       t.string :latitude,                null: false, default: "", limit: 45
       t.string :longitude,               null: false, default: "", limit: 45
-      t.references :localities,          foreign_key: true
+      t.references :localities,          null: false, foreign_key: true
       t.timestamps null: false
     end
 
