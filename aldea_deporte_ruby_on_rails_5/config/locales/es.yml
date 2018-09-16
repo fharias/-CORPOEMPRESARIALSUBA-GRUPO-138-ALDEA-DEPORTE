@@ -2,6 +2,8 @@ es:
   my_locales:
     designed_by: Diseñado por
     create_by: Creado por
+    date_cannot_be_in_the_past: No puede ser una fecha pasada
+    date_cannot_be_in_the_future: No puede ser una fecha futura
   date:
     abbr_day_names:
     - dom

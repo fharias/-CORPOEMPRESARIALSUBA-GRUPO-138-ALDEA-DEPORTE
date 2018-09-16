@@ -1,29 +1,66 @@
-<h2>Sign up</h2>
+<div class="page-header clear-filter" filter-color="orange">
+    <!--<div class="page-header-image" style="background-image:url(/assets/bg1.jpg)"></div>-->
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <div class="content" style="margin-top: 3%; margin-bottom: 0px">
+      <div class="container">
+        <div class="col-lg-4 col-md-8 ml-auto mr-auto">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+        <div class="card card-signup" data-background-color="orange">
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                
+                <div class="card-header text-center">
+                  <h3 class="card-title title-up"><%= I18n.t('devise.registrations.new.sign_up') %></h3>
+                  <!-- <div class="social-line">
+                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-icon btn-round">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-neutral btn-twitter btn-icon btn-lg btn-round">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#pablo" class="btn btn-neutral btn-google btn-icon btn-round">
+                      <i class="fab fa-google-plus"></i>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="card-body">
+                  <div class="input-group no-border">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="now-ui-icons ui-1_email-85"></i>
+                      </span>
+                    </div>
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email..." %>
+                  </div>
+                  <div class="input-group no-border">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="now-ui-icons users_circle-08"></i>
+                      </span>
+                    </div>
+                    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Contraseña..." %>
+                  </div>
+                  <div class="input-group no-border">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="now-ui-icons ui-1_email-85"></i>
+                      </span>
+                    </div>
+                    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirmacion Contraseña..." %>
+                    <!--<input type="text" class="form-control" placeholder="Email...">-->
+                  </div>
+                
+                <div class="card-footer text-center">
+                    <%= f.submit I18n.t('devise.registrations.new.sign_up'), class: "btn btn-neutral btn-round btn-lg" %>
+                    <br>
+                    <%= render "devise/shared/links" %>
+                </div>
+              <% end %>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

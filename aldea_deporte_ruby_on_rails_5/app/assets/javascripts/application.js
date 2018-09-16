@@ -20,5 +20,5 @@
 //= require plugins/jquery.easing.min
 //= require now-ui-kit
 //= require app
-//= require turbolinks
+= require turbolinks
 //= require_tree .
