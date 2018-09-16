@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates :user_name,   presence: true, length: { minimum: 3 }
   validates :first_name,  presence: true, length: { minimum: 3 }
   validates :last_name,   presence: true, length: { minimum: 3 }
-  validates_presence_of     :birthday, :date_cannot_be_in_the_future
+  validates :birthday,   presence: true
   
   validates_associated :users_role
   validates_associated :events

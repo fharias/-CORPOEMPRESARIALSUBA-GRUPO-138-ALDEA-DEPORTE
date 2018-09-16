@@ -1,7 +1,7 @@
 class Event < ApplicationRecord
 
   validates :description, presence: true, length: { minimum: 3 }
-  validates :date,        presence: true, :date_cannot_be_in_the_past
+  validates :date,  presence: true
   validates :age_limit,   presence: true
   validates :status,      presence: true, acceptance: { accept: ['Activo', 'Inactivo'] }
 
