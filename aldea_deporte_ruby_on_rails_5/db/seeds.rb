@@ -38,3 +38,16 @@ UsersRole.create(
 )
 
 p "Created relation with role admin user AldeaAdmin"
+
+SportCategory.create(
+    [
+        {description: 'Futbol'},
+        {description: 'Micro Futbol'},
+        {description: 'Baloncesto'},
+        {description: 'Patinaje'},
+        {description: 'Ciclismo'},
+        {description: 'Actividades Recreativas'},
+    ]
+)
+
+p "Created #{SportCategory.count} sport categories"
